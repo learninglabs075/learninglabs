@@ -1,0 +1,59 @@
+.my-content-background {
+  background-size: cover;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/ca-learning-lab.appspot.com/o/public%2Ffish-anemone-color-retouched.png?alt=media&token=1822031c-ed68-47ee-b5dc-446cdd82ca12);
+}
+
+.course-view-background {
+  height: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/ca-learning-lab.appspot.com/o/public%2Fclear-blue-sea-floor.jpeg?alt=media&token=2ca3431a-49fc-4a52-b7aa-bfaf2a645ff7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.my-classroom-background {
+  background-size: cover;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/ca-learning-lab.appspot.com/o/public%2Fclear-blue-sea-floor.jpeg?alt=media&token=2ca3431a-49fc-4a52-b7aa-bfaf2a645ff7);
+}
+
+.hover-pointer-default:hover {
+  cursor: pointer;
+  color: #895d7a;
+}
+
+.hover-pointer-blue:hover {
+  cursor: pointer;
+  color: #489bb5;
+}
+
+.display-area {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.display-area-full {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.course-view-background {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/ca-learning-lab.appspot.com/o/public%2Fclear-blue-sea-floor.jpeg?alt=media&token=2ca3431a-49fc-4a52-b7aa-bfaf2a645ff7);
+}
+
+.question-form-left-column {
+  background-color: #f9efed;
+}
+
+.short-answer-info {
+  background-color: #f9efed;
+}
+
+.title-card-input-fields {
+  background-color: #f9efed;
+}
+
+.scoring-container {
+  background-color: #f9efed;
+}
+
+.tag-generator {
+  background-color: #f9efed;
+}

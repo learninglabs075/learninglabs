@@ -1,0 +1,433 @@
+.argument {
+  border: 1px dotted gray;
+  border-radius: 2px;
+  color: black;
+  display: inline-block;
+  font-size: 16px;
+  line-height: normal;
+  margin-left: 1px;
+  margin-right: 1px;
+  min-width: 20px;
+  min-height: 18px;
+  padding: 3px;
+}
+
+.argument-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
+  margin-left: 1px;
+  margin-right: 1px;
+  min-height: 14px;
+  min-width: 16px;
+  padding: 3px;
+}
+
+.argument:focus,
+.atomic-num:focus,
+.elem-base:focus,
+.elem-script:focus,
+.denominator:focus,
+.isotope-num:focus,
+.numerator:focus {
+  border: none;
+  outline: 1px solid gray;
+  background-color: rgb(220, 240, 247);
+}
+
+.atomic-num-btn,
+.isotope-num-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: 2px;
+  padding: 2px;
+}
+
+.clear {
+  float: right;
+  position: relative;
+  bottom: 35px;
+}
+
+.cosine-btn {
+  color: gray;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.cosine {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 3px;
+  margin-right: 3px;
+  line-height: normal;
+}
+
+.close-pallette {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.denominator,
+.numerator {
+  display: inline-block;
+  border: 1px dotted gray;
+  line-height: normal;
+  min-width: 16px;
+  min-height: 16px;
+  padding: 2px;
+  vertical-align: bottom;
+}
+
+.denominator-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 16px;
+  padding: 2px;
+  vertical-align: bottom;
+}
+
+.numerator-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 16px;
+  padding: 2px;
+  vertical-align: top;
+}
+
+/* the class name "base" is already used for TeX components */
+
+.elem-base {
+  border: 1px dotted gray;
+  display: inline-block;
+  font-size: 16px;
+  line-height: normal;
+  margin-right: 3px;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 3px;
+}
+
+.elem-base-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
+  margin-right: 3px;
+  min-height: 14px;
+  min-width: 16px;
+  padding: 3px;
+}
+
+.elem-script {
+  border: 1px dotted gray;
+  display: inline-block;
+  font-size: 12px;
+  min-width: 14px;
+  min-height: 14px;
+  padding: 2px;
+}
+
+.elem-script-btn {
+  background-color: rgb(220, 240, 247);
+  border: 1px dotted gray;
+  display: inline-block;
+  margin-right: 2px;
+  min-height: 7px;
+  min-width: 7px;
+  padding: 3px;
+}
+
+.equation-editor {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  font-family: lato;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+}
+
+.equation-editor:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.exp-decoration {
+  font-size: 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: inline-block;
+  line-height: normal;
+  min-height: 20px;
+}
+
+.fraction {
+  display: inline-block;
+  line-height: normal;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.fraction-divider {
+  border-top: 1px solid gray;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+.lowered {
+  bottom: -3px;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.lowered-v2 {
+  bottom: -5px;
+  left: 1px;
+  position: relative;
+  font-size: 8px;
+}
+
+.overhat {
+  display: inline-block;
+  line-height: normal;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.overhat-decoration {
+  color: gray;
+  display: block;
+  position: relative;
+  top: 4px;
+  transform: scale(1.5, 1);
+}
+
+.pallette {
+  padding: 5px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  left: 30px;
+  right: auto;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 10px gray;
+  width: 450px;
+  z-index: 1;
+}
+
+.pallette:hover {
+  cursor: move;
+}
+
+.parentheses {
+  color: gray;
+  display: inline-block;
+  font-size: 22px;
+  line-height: normal;
+}
+
+.parentheses-btn {
+  color: gray;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.label {
+  font-family: Lato;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.54);
+  position: relative;
+  top: 25px;
+  left: 10px;
+}
+
+.radical {
+  color: gray;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+  left: -6px;
+  line-height: normal;
+  position: relative;
+  top: 5px;
+  transform: scale(0.8, 1.1);
+  width: 3px;
+}
+
+.chem-symbol-left-container {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-right: 3px;
+}
+
+.ion-charge {
+  bottom: 15px;
+  position: relative;
+}
+
+.radical-btn {
+  color: gray;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 200;
+
+  position: absolute;
+  left: 6px;
+  bottom: -11px;
+  transform: scale(0.7, 1);
+}
+
+.radical-arg {
+  border-top: 1.5px solid gray;
+  display: inline-block;
+  left: 4px;
+  line-height: normal;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  position: relative;
+}
+
+.radical-arg-btn {
+  border-top: 1.5px solid gray;
+  display: inline-block;
+  left: 4px;
+  line-height: normal;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  position: relative;
+}
+
+.raised {
+  top: -3px;
+  position: relative;
+  vertical-align: top;
+}
+
+.ion-charge-btn {
+  top: -11px;
+  position: relative;
+  vertical-align: top;
+}
+
+.sci-notation {
+  display: inline-block;
+  line-height: normal;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-top: 5px;
+}
+
+.sine {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 3px;
+  margin-right: 3px;
+  line-height: normal;
+}
+
+.sine-btn {
+  color: gray;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.sqrt {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  line-height: normal;
+  text-align: center;
+}
+
+.atomic-num,
+.isotope-num {
+  border: 1px dotted gray;
+  font-size: 12px;
+  min-width: 14px;
+  max-height: 14px;
+  padding: 2px;
+  display: block;
+  line-height: normal;
+  margin-top: 6px;
+}
+
+.subscript {
+  display: inline-block;
+  font-size: 22px;
+  line-height: normal;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+
+.chem-symbol {
+  display: inline-block;
+  font-size: 22px;
+  line-height: normal;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.superscript,
+.exponential {
+  display: inline-block;
+  font-size: 22px;
+  line-height: normal;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.symbol-btns {
+  width: 400px;
+  margin-left: 25px;
+}
+
+.tangent-btn {
+  color: gray;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.template-container {
+  width: 400px;
+  margin-left: 25px;
+}

@@ -1,0 +1,1422 @@
+html {
+  margin: 10;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*=======================================================================*/
+/*=========================== general styles ============================*/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.padding-tiny {
+  padding: 3px;
+}
+
+.padding-light {
+  padding: 10px;
+}
+
+.padding-medium {
+  padding: 30px;
+}
+
+.padding-heavy {
+  padding: 50px;
+}
+
+.padding-top-light {
+  padding-top: 10px;
+}
+
+.padding-top-medium {
+  padding-top: 30px;
+}
+
+.padding-top-heavy {
+  padding-top: 50px;
+}
+
+.padding-bottom-light {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-medium {
+  padding-bottom: 30px;
+}
+
+.padding-vertical-tiny {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.padding-vertical-light {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padding-vertical-medium {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padding-x-light {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-horizontal-medium {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padding-left-light {
+  padding-left: 10px;
+}
+
+.padding-left-medium {
+  padding-left: 30px;
+}
+
+.padding-left-heavy {
+  padding-left: 50px;
+}
+
+.margin-left-medium {
+  margin-left: 30px;
+}
+
+.margin-bottom-light {
+  margin-bottom: 10px;
+}
+
+.margin-x-tiny {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.margin-x-light {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-vertical-light {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-vertical-medium {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.MuiMobileStepper-progress {
+  height: 10px !important;
+  border: 1px grey solid;
+  width: 100% !important;
+}
+
+.MuiLinearProgress-colorPrimary {
+  background-color: rgb(77 155 173 / 9%) !important;
+}
+
+/*=======================================================================*/
+/*======================== custom shared styles =========================*/
+
+.modal-common-styling {
+  outline: none;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  overflow: auto;
+}
+
+.modal-form-v1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.modal-form-v2 {
+  position: relative;
+  max-height: 87%;
+  max-width: 85%;
+  padding: 40px;
+}
+
+.modal-image-preview {
+  outline: none;
+  background-color: none;
+  overflow: auto;
+}
+
+.modal-pdf-preview {
+  outline: none;
+  background-color: whitesmoke;
+  overflow: auto;
+}
+
+.details-container {
+  padding: 20px;
+  padding-top: 45px;
+}
+.info-row {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+.info-property {
+  width: 130px;
+  margin-right: 30px;
+  height: 28px;
+}
+.info-value {
+  min-width: 250px;
+  max-width: 400px;
+  height: 28px;
+}
+
+.student-count {
+  text-align: right;
+}
+
+.shift-button-position-up {
+  position: relative;
+  bottom: 6px;
+}
+
+.editor-field-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: gray;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+
+.preview-box {
+  position: fixed;
+  left: 200px;
+  bottom: 300px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.hover-pointer-blue:hover {
+  cursor: pointer;
+  color: #79c2d3;
+}
+
+.hover-pointer-orange:hover {
+  cursor: pointer;
+  color: #eab371;
+}
+
+.hover-pointer-gray:hover {
+  cursor: pointer;
+  color: #dcdcdc;
+}
+
+.delete-button {
+  border: none;
+  outline: none;
+  color: rgb(120, 120, 120);
+  background-color: transparent;
+}
+
+.delete-button-silver {
+  border: none;
+  outline: none;
+  color: silver;
+  background-color: transparent;
+}
+
+.pdf-page-annotation {
+  bottom: 30px;
+}
+
+.cursor-circle {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='6' opacity='.3'%3E%3C/circle%3E%3C/svg%3E")
+      14 14,
+    pointer;
+}
+
+.cursor-eraser {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27.73' height='26.64' viewBox='0 0 27.73 26.64'%3E%3Cpath stroke='gray' stroke-width='2px' fill='whitesmoke' d='M143.55,332.74h-5.09l-1.62-1.29-4-4a5.53,5.53,0,0,1-.24-1.61,5.71,5.71,0,0,1,.41-2.11l6.06-6.23,9.13-9L158,318.1Z' transform='translate(-131.63 -307.1)'/%3E%3Cline stroke='gray' stroke-width='2px' x1='6.26' y1='12.37' x2='14.71' y2='20.83'/%3E%3C/svg%3E")
+      0 27,
+    move;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+/*=================================================================*/
+/*========================= login styles ==========================*/
+
+.email-password-container {
+  width: 300px;
+  height: 125px;
+}
+
+.login-error-container {
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.email-field {
+  width: 350px;
+  height: 60px;
+}
+
+.check-your-inbox {
+  width: 300px;
+}
+
+.signup-header {
+  padding-bottom: 15px;
+}
+
+.signup-fields {
+  height: 325px;
+  justify-content: space-around;
+}
+
+.account-created {
+  position: absolute;
+  bottom: 12px;
+}
+
+.reset-password-success {
+  position: absolute;
+  bottom: 15px;
+}
+
+/*=================================================================*/
+/*=====================  navigation bar styles ====================*/
+
+.main-nav-logo {
+  flex-grow: 1;
+  background-color: transparent;
+  margin-left: 1;
+}
+
+.main-nav-logo-divider {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #4d4d4d;
+  position: relative;
+  bottom: 4px;
+}
+
+.main-nav-link-wrapper {
+  width: 50%;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 80px;
+  font-family: "Lato", sans-serif;
+}
+
+.main-nav-link {
+  color: white;
+}
+
+.user-account-menu {
+  position: relative;
+  right: 70px;
+}
+
+.side-nav-spacer {
+  height: 72px;
+}
+
+/*=================================================================*/
+/*======================  general page styles =====================*/
+
+.page-background {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.quote-container {
+  position: relative;
+  top: 200px;
+  left: 35%;
+  width: 40%;
+  min-width: 350px;
+  min-height: 100px;
+}
+.quote-attribution {
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+
+/*=================================================================*/
+/*==================  general subpage styles ======================*/
+
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+.display-area {
+  height: calc(100% - 75px);
+  width: calc(100% - 180px);
+  margin-top: 60px;
+  margin-left: 160px;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: rgba(200, 200, 200, 0.3);
+  overflow: auto;
+}
+
+.display-area-full {
+  height: calc(100% - 65px);
+  width: 100%;
+  margin-top: 65px;
+  background-color: rgba(200, 200, 200, 0.3);
+  overflow: auto;
+}
+
+.subpage-header {
+  padding: 20px;
+}
+
+.floating-add-button {
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+}
+
+/*=================================================================*/
+/*======================  course view styles ======================*/
+
+.course-view-background {
+  height: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/koral-community-development.appspot.com/o/public%2Fmy-classroom-background.png?alt=media&token=96de18f1-322b-4d99-9683-db98339fb1b7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.course-overview {
+  position: relative;
+  padding-left: 5%;
+}
+
+.course-image {
+  height: 180px;
+  width: 320px;
+}
+
+.edit-course-title-and-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 180px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.report-a-problem {
+  color: grey;
+  left: 12px;
+  bottom: 22px;
+}
+
+.manage-instructors {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.course-management-tools {
+  flex-grow: 1;
+  display: flex;
+  height: 100px;
+}
+
+.tool-selected {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  width: 200px;
+}
+
+.laTeX-group-selected {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  width: 155px;
+}
+
+/* .katex .mathnormal {
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.75;
+} */
+
+/* .katex {
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.75;
+} */
+
+.course-utils-display-area {
+  width: 75%;
+  min-width: 700px;
+  padding-top: 10px;
+}
+
+.course-my-grades-link {
+  float: right;
+  padding-right: 5px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.course-content-menu {
+  padding-top: 10px;
+  height: calc(100% - 10px);
+  min-width: 320px;
+  background-color: rgba(200, 200, 200, 0.3);
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.course-title {
+  position: relative;
+
+  left: 10px;
+}
+
+.course-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 435px;
+  padding-left: 40px;
+}
+
+.course-description {
+  padding-left: 40px;
+}
+
+.module-title {
+  position: relative;
+  left: 20px;
+  color: #56b3c8;
+}
+
+.content-type-icon {
+  position: relative;
+  top: 2px;
+  padding-right: 10px;
+}
+
+.item-display-area {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.content-type-icon-container {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.module-item-card {
+  width: 80%;
+  min-width: 700px;
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+.item-type-label {
+  padding-left: 15px;
+}
+
+.edit-module-title {
+  position: relative;
+  bottom: 10px;
+  right: 3px;
+}
+
+.expanding-speed-dial-container {
+  transform: translateZ(0px);
+  flex-grow: 1;
+  width: 100%;
+}
+
+.speed-dial-position {
+  position: relative;
+  top: 50px;
+  background-color: transparent;
+}
+
+.speed-dial-position-v2 {
+  position: sticky;
+  width: 50px;
+  bottom: 5px;
+  left: 800px;
+  background-color: transparent;
+}
+
+.speed-dial.MuiSpeedDial-directionUp {
+  bottom: 6px;
+  right: 5px;
+}
+
+.select-module-item {
+  padding-left: 40px;
+  width: 300px;
+}
+
+.choose-file-type {
+  padding-left: 42px;
+}
+
+/*=================================================================*/
+/*================== specific my-classroom styles =================*/
+
+.my-classroom-background {
+  background-size: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/koral-community-development.appspot.com/o/public%2Fmy-classroom-background.png?alt=media&token=96de18f1-322b-4d99-9683-db98339fb1b7);
+}
+
+.click-to-add-course {
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.course-card {
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+}
+
+.product-card {
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.instructor-label-container {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 90px;
+  height: 25px;
+  text-align: center;
+}
+
+.instructor-label {
+  color: rgb(100, 100, 100);
+}
+
+.course-card-picture {
+  height: 180px;
+  width: 320px;
+}
+
+.course-card-content {
+  height: 108px;
+}
+
+.instructor-description-container {
+  position: relative;
+  bottom: 3px;
+  height: 100%;
+}
+
+.select-course-role {
+  width: 350px;
+}
+
+/* .add-course-nav-buttons {
+  padding-top: 30px;
+  justify-content: space-between;
+} */
+
+.find-course-form {
+  width: 350px;
+}
+
+.found-course-list {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.add-selected-course {
+  bottom: -15px;
+}
+
+.course-title-and-description-fields {
+  padding: 10px;
+  width: 350px;
+  height: 180px;
+  justify-content: space-between;
+}
+
+.share-with {
+  margin-left: 12px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.find-course-header {
+  padding-bottom: 20px;
+}
+
+.course-search-field {
+  width: 350px;
+}
+
+.back-to-select-role {
+  display: flex;
+  padding-top: 20px;
+}
+
+.link-iframe-area {
+  height: calc(100% - 100px);
+}
+
+.please-select-item {
+  justify-content: center;
+  position: relative;
+  top: 25%;
+}
+
+.link-details-card-container {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.link-details-card {
+  width: calc(100% - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link-title {
+  display: inline;
+  position: relative;
+  top: 4px;
+}
+
+.link-details-vertical-divider {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline;
+  position: relative;
+  top: 3px;
+}
+
+.link-url {
+  display: inline;
+  position: relative;
+  top: 1px;
+}
+
+.progress-circles {
+  top: 10px;
+}
+
+.question-set-display-card {
+  width: 700px;
+  height: 500px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .question-set-display-card {
+    width: 500px;
+    height: 500px;
+    overflow-x: hidden !important;
+    padding: 15px;
+  }
+}
+
+.multiple-choice-radio {
+  display: inline;
+  padding-top: 3px;
+}
+
+.submit-response {
+  margin-left: 76%;
+  width: 125px;
+}
+
+.attempts-counter {
+  width: 160px;
+  text-align: center;
+  right: 10px;
+  bottom: 70px;
+}
+
+.correct-status {
+  width: 125px;
+  right: 5px;
+  top: 10px;
+}
+
+.correct-status-MP {
+  display: inline-block;
+}
+
+.past-due {
+  position: sticky;
+  background-color: rgb(226, 114, 114);
+  text-align: center;
+  color: white;
+  z-index: 99;
+}
+
+.past-due-penalty {
+  position: sticky;
+  background-color: rgb(226, 190, 114);
+  text-align: center;
+  color: white;
+  z-index: 99;
+}
+
+/*=================================================================*/
+/*=================== specific my-content styles ==================*/
+
+.add-link-btn {
+  position: absolute;
+  left: 530px;
+  bottom: 5%;
+}
+
+.my-content-background {
+  background-size: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/koral-community-development.appspot.com/o/public%2Fmy-content-background.png?alt=media&token=6caa8150-9b26-4bf8-9f5e-8e963e6c9e06);
+}
+
+.library-info-fields {
+  width: 330px;
+  height: 300px;
+}
+
+.correct-answer-display {
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  outline: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 4px;
+  font-family: Lato;
+}
+
+.question-list-and-preview-area {
+  display: flex;
+  flex-direction: row;
+  /* margin: 5px; */
+  /* justify-content: space-around; */
+}
+
+.empty-list-and-preview-area {
+  width: 90%;
+  height: 150px;
+}
+
+.empty-question-preview {
+  flex-grow: 1;
+  padding-top: 15%;
+  text-align: center;
+  min-width: 300px;
+}
+
+.empty-question-import {
+  flex-grow: 1;
+  padding-top: 30%;
+  text-align: center;
+  min-width: 600px;
+}
+
+.search-library {
+  margin-bottom: 5px;
+}
+
+.question-list-panel {
+  margin-right: 20px;
+  width: 380px;
+  display: inline-block;
+  min-width: 380px;
+  text-align: center;
+}
+
+.question-list {
+  height: 350px;
+  padding: 3px;
+  padding-bottom: 10px;
+  overflow: auto;
+  border: solid;
+  border-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.question-range-counter {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pagination-nav {
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+
+.add-library-question-buttons {
+  height: 76px;
+  margin: 1px;
+}
+
+.add-question-my-sets {
+  height: 120px;
+  margin: 1px;
+  justify-content: space-around;
+}
+
+.question-preview-container {
+  min-width: 620px;
+  display: flex;
+  flex-direction: row;
+}
+
+.question-preview-card {
+  min-width: 550px;
+  width: 550px;
+  height: 420px;
+  margin: 8px;
+  margin-top: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.question-library-img-med {
+  max-height: 400px;
+  max-width: 65%;
+}
+
+.question-library-img-lrg {
+  max-height: 600px;
+  max-width: 100%;
+}
+
+.title-card-title-preview {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 50px;
+  text-align: center;
+  overflow: auto;
+}
+
+.title-card-body-preview {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 200px;
+  text-align: justify;
+  overflow: auto;
+}
+
+.question-preview-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+
+.scoring-preview-card {
+  min-height: 50px;
+  width: 230px;
+  margin: 8px;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+.tag-preview-card {
+  min-height: 50px;
+  width: 230px;
+  margin: 8px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.solution-preview-card {
+  min-height: 50px;
+  width: 230px;
+  margin: 8px;
+  padding: 15px;
+}
+
+.auxfile-preview-card {
+  min-height: 50px;
+  width: 230px;
+  margin: 8px;
+  padding: 15px;
+}
+
+.select-or-add-library {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.select-question-checkbox {
+  background-color: "transparent";
+}
+
+.select-question-checkbox:hover {
+  background-color: "transparent";
+}
+
+.library-thumbnail {
+  display: "inline-block";
+  margin: 10px;
+  min-width: 150px;
+  max-height: 140px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.library-icon {
+  position: relative;
+  left: 22px;
+  width: 32px;
+  height: 32px;
+  margin: 1px;
+}
+
+.library-thumbnail-action {
+  padding: 20px;
+}
+
+.document-grid {
+  height: 68vh;
+  width: 90%;
+}
+
+.image-grid {
+  width: 900px;
+  max-height: 800px;
+}
+
+.image-grid-container {
+  padding: 30px;
+  max-height: 800px;
+  max-width: 100%;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.upload-image-container {
+  padding: 10px;
+  align-items: center;
+}
+
+.delete-image-button {
+  position: relative;
+  margin-right: 4px;
+  bottom: 18px;
+}
+
+.open-file-icon {
+  position: relative;
+  top: 5px;
+  left: 8px;
+  color: rgb(140, 140, 140);
+}
+
+.delete-file-icon {
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+
+.link-subdisplay-area {
+  justify-content: space-around;
+  width: calc(100% - 10px);
+  margin-left: 10px;
+}
+
+.link-list-container {
+  width: 430px;
+  max-width: 430px;
+  min-width: 430px;
+  height: 70vh;
+  overflow: auto;
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-right: 10px;
+}
+
+.link-description-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.library-image-subdisplay {
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+}
+
+.library-image-list {
+  width: 300px;
+  height: 500px;
+  overflow: auto;
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-right: 20px;
+}
+
+.search-library-images {
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.library-image-info {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.no-link-selected {
+  width: 560px;
+}
+
+.delete-link-button {
+  position: absolute;
+
+  top: 10px;
+  right: 8px;
+}
+
+.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label {
+  background-color: #e2973c;
+}
+
+/*=================================================================*/
+/*====================== question form styles =====================*/
+
+.question-form-secondary-container {
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+.question-form-left-column {
+  width: 500px;
+  background-color: #faecdc;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.question-form-left-column-mp {
+  width: 420px;
+  overflow: auto;
+  background-color: #faecdc;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.question-form-right-column {
+  width: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+}
+
+.parts-array-container {
+  max-height: 400px;
+  min-width: 250px;
+  overflow: auto;
+}
+
+.delete-multipart-question {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.multipart-left-column {
+  width: 420px;
+  height: 70vh;
+  overflow: auto;
+  background-color: #faecdc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.is-correct-checkbox {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.remove-last-entry-container {
+  left: 230px;
+}
+
+.add-choice-button {
+  border: none;
+  outline: none;
+  color: rgb(120, 120, 120);
+  background-color: transparent;
+}
+
+.add-choice-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  right: 5px;
+}
+
+.short-answer-info {
+  background-color: #faecdc;
+  padding: 15px;
+  text-align: center;
+}
+
+.title-card-input-fields {
+  background-color: #faecdc;
+  height: 380px;
+  padding: 20px;
+}
+
+.title-card-input-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 11px;
+}
+
+.title-card-preview {
+  height: 420px;
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.scoring-container {
+  background-color: #faecdc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.points-field-row {
+  padding-left: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.tag-generator {
+  background-color: #faecdc;
+  padding: 10px;
+}
+
+.save-question-button {
+  width: 150px;
+}
+
+.select-part-to-view {
+  min-height: 200px;
+  min-width: 680px;
+  padding-top: 150px;
+}
+
+/*=================================================================*/
+/*================= specific community styles =====================*/
+
+.community-background {
+  background-size: 100% 95%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/koral-community-development.appspot.com/o/public%2Fcommunity-background.jpeg?alt=media&token=65f0cd5d-e2c3-4e94-bc1d-d5a444fedad1);
+}
+
+/*=================================================================*/
+/*====================== profile page styles ======================*/
+
+.user-uploaded-picture {
+  height: 180px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.update-email-fields {
+  height: 200px;
+  width: 320px;
+  justify-content: space-around;
+}
+
+.update-email-submit-button {
+  margin-top: 3px;
+  width: 320px;
+  padding-bottom: 40px;
+}
+
+.update-name-submit-button {
+  margin-top: 8px;
+  width: 320px;
+  padding-bottom: 40px;
+}
+
+.update-user-alert {
+  width: 320px;
+}
+
+.update-user-success {
+  bottom: 11px;
+  width: 320px;
+}
+
+.whiteboard-full {
+  height: calc(100vh-65px);
+  margin-top: 65px;
+}
